@@ -1,0 +1,56 @@
+{
+    "plugins": [
+        "suitescript"
+    ],
+    "env": {
+        "browser": true,
+        "es6": true,
+        "suitescript/suitescript1": true,
+        "suitescript/suitescript2": true,
+        "amd" : true,
+        "jquery" : true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 9
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            { "SwitchCase": 1 }
+        ],
+        "quotes": "off",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": "warn",
+        "curly" : ["error", "all"],
+        "no-lone-blocks" : "error",
+        "no-new" : "warn",
+        "no-new-func" : "error",
+        "no-new-wrappers" : "error",
+        "no-param-reassign": ["error", {"props": false}],
+        "radix" : "error",
+        "yoda" : "error",
+        "array-bracket-spacing" : ["error", "never"],
+        "brace-style" : ["error", "1tbs", {"allowSingleLine": true}],
+        "camelcase": "error",
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        "new-parens": "error",
+        "no-array-constructor": "error",
+        "no-continue": "error",
+        "no-multi-assign": "error",
+        "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 2, "maxBOF": 2 }],
+        "no-new-object": "error",
+        "one-var": ["error", "never"],
+        "padded-blocks": ["error", "never"],
+        "no-prototype-builtins" : "off",
+        "no-unused-vars": ["error", { "vars": "local", "args": "after-used", "ignoreRestSiblings": false }]
+    }
+}
